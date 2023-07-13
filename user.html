@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" type="text/css" href="assets/materialize/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/util.css">
+    
+</head>
+<body>
+   <!--_________________________navbar-->
+   <nav class="green accent-3 z-depth-4">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">User</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="https://t.me/ftmAmooz">Telegram</a></li>
+            <li><a href="https//eitaa.com/FtmAmooz">Eita</a></li>
+            
+          </ul>
+        </div>
+   </nav>    
+   <ul class="sidenav" id="mobile-demo">
+        <li><div class="user-view">
+          <div class="background">
+            <img style="width: 100%;" src="/assets/images/back.jpg">
+          </div>
+          <a href="#user"><img class="circle" src="assets/images/me.JPG"></a>
+          <a href="#name"><span class="white-text name">Ftm Amooz</span></a>
+          <a href="#email"><span class="white-text email">ftm.amoozegar@gmail.com</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">link</i>Amooz Home</a></li>
+        <li><a href="#!">About</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">User</a></li>
+   </ul>
+   <!-- navbar end_______ -->
+
+
+   <!--_________________________Add & Search input-->
+  <section  class=" m-t-50 row container ">
+
+   <!-- _________________________Add user button  -->
+     <div id="add-but" class="p-r-10 p-l-10 col s12 m4">
+      <button class="green accent-3 btn waves-effect w-full rounded_pill flex-c">
+        <i class="material-icons m-r-5">add</i>Add User
+      </button>
+     </div>
+   <!-- _______________________Search section  -->
+     <div class="input-field col s12 m8">
+        <input  id="search" type="text" class="validate">
+        <label for="search" class="flex-m">
+            <i class="material-icons">search</i>search
+        </label>          
+     </div>
+  </section>  
+
+
+   <!-- ________________________Table & Paging footer -->
+  <section>
+   <!-- _______________________ user list on phone  -->
+    <ul class="collapsible hide-on-med-and-up">
+      <li class="turnarrow">
+        <div class="collapsible-header"><i class="material-icons rotate trans-0-2">arrow_drop_down</i>First User</div>
+        <div class="collapsible-body m-l-20"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-body m-l-20">
+          <i class="material-icons m-r-20">edit</i>
+          <i class="material-icons">delete</i>
+        </div>
+      </li>
+      <li class="turnarrow">
+        <div class="collapsible-header"><i class="material-icons rotate trans-0-2">arrow_drop_down</i>Second User</div>
+        <div class="collapsible-body m-l-20"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-body m-l-20">
+          <i class="material-icons m-r-20">edit</i>
+          <i class="material-icons">delete</i>
+        </div>
+      </li>
+      <li class="turnarrow">
+        <div class="collapsible-header"><i class="material-icons rotate trans-0-2">arrow_drop_down</i>Third User</div>
+        <div class="collapsible-body m-l-20"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-body m-l-20 ">
+          <i class="material-icons m-r-20">edit</i>
+          <i class="material-icons">delete</i>
+        </div>        
+      </li>
+    </ul>
+
+   <!-- ________________________User list on desktop --> 
+
+    <div class="hide-on-small-only container">
+      <table class="highlight striped centered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Property</th>
+            <th>Action</th>
+          </tr>
+       </thead>
+  
+  
+        <tbody>
+          <tr>
+           <td>1</td>
+           <td>First User</td>
+           <td>Lorem ipsum dolor sit.</td>
+           <td>
+            <i class="material-icons m-r-20">edit</i>
+            <i class="material-icons">delete</i>
+            </td>
+         </tr>
+          <tr>
+           <td>2</td>
+           <td>Second User</td>
+           <td>Lorem ipsum dolor sit.</td>
+           <td>
+            <i class="material-icons m-r-20">edit</i>
+            <i class="material-icons">delete</i>
+            </td>
+         </tr>
+          <tr>
+           <td>3</td>
+           <td>Third User</td>
+           <td>Lorem ipsum dolor sit.</td>
+           <td>
+            <i class="material-icons m-r-20">edit</i>
+            <i class="material-icons">delete</i>
+            </td>
+         </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- _______________________User paging footer -->
+    <div class="container flex-sb-m pos-fixed bottom-0 right-0 left-0 z-depth-3 p-all-9 rounded_top_30">
+      <div class="green-text text-darken-3">
+        showing
+        <input type="number" value="10" class="max-w-40">
+        of
+        <span>100</span>
+      </div>
+      <div class="green-text text-darken-3 m-r-10">
+        <i class="material-icons waves-effect green rounded_pill white-text">chevron_left</i>
+        <i class="material-icons waves-effect green rounded_pill white-text">chevron_right</i>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- _________________________ Add User Modal-->
+  <div id="smokey-back" class="smokey-back dis-none "></div>
+  <div id="add-user-modal" class="add-user-modal container rounded_top_30 p-l-40 p-r-40 center-on-small-only trans-0-3">
+    <h5><i class="p-r-10 p-t-10  material-icons ">person_add</i>Add User</h5>
+    <form action="">
+      <div class="input-field">
+        <input  id="Name" type="text" class="validate">
+        <label for="Name" class="flex-m">Name 
+      </div>
+      <div class="input-field">
+        <input  id="Last Name" type="text" class="validate">
+        <label for="Last Name" class="flex-m">Last Name 
+      </div>
+      <button class="btn waves-effect rounded_pill green accent-3 w-full max-w-300">
+        Submit
+      </button>
+
+
+    </form>
+             
+     
+  </div>
+
+
+
+  
+
+      
+      
+
+    <script src="assets/materialize/js/materialize.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/user.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,54 @@
+@media(min-width:600px){
+    /*  */
+    #cotentsection{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+/* چرخش آیکون user list */
+
+.turnarrow.active .rotate{
+    transform:rotate(180deg);
+}
+
+
+/* تغییر رنگ یوزر انتخاب شده */
+.turnarrow.active , .turnarrow.active .collapsible-header{
+    background-color: rgb(200, 208, 201);
+}
+
+/* هایلایت موس هاور در جدول */
+table.highlight > tbody > tr:hover {
+    background-color: rgba(65, 183, 54, 0.5);
+  }
+
+  .container{
+    width: 100%;
+  }
+
+  /* بک گراند دودی */
+  .smokey-back{
+    background-color: rgba(21, 51, 19, 0.303);
+    width: 100%;
+    height: 100vh;
+    position:fixed;
+    top:0;
+    left: 0;
+    z-index: 999;
+  }
+  /* Add user Modal */
+  .add-user-modal{
+    z-index:1000;
+    background-color: white;
+    height: 70vh;   
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: -70vh;
+  }
+  .add-user-modal.show{
+    bottom: 0;
+  }
+
